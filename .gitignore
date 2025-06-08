@@ -1,0 +1,16 @@
+# 3rd party
+ext/cutlass
+
+# build files
+piranha
+piranha-*
+build
+
+# dataset
+*/MNIST/*
+*/CIFAR10/*
+
+# experimental data
+output
+**/*.zip
+**/*.log

@@ -7,6 +7,8 @@ Mizar is a secure computation protocol designed for three-party outsourced compu
 
 This repository built upon [Piranha](https://github.com/ucbrise/piranha) provides a prototype implementation of Mizar, intended solely for experimental testing purposes and SHOULD NOT be used in production environments.
 
+The paper is available on Eprint [Mizar](https://eprint.iacr.org/2025/1063)
+
 
 ## Build & Run
 
@@ -36,4 +38,16 @@ python download_{mnist, cifar}.py
 python3 ./scripts/quick_exp.py -m func  -p falcon aegis mizar -c 0 1 2                                                          # func test
 python3 ./scripts/quick_exp.py -m snni  -p falcon aegis mizar -c 0 1 2 --models lenet vgg16 --num_iterations 10                 # snni test
 python3 ./scripts/quick_exp.py -m train -p falcon aegis mizar -c 0 1 2 --models lenet vgg16 --num_iterations 10 --batch_size 32 # snnt test
+```
+
+## Citing Mizar
+
+```text
+@misc{cryptoeprint:2025/1063,
+      author = {Ye Dong and Xudong Chen and Xiangfu Song and Yaxi Yang and Tianwei Zhang and Jin-Song Dong},
+      title = {{MIZAR}: Boosting Secure Three-Party Deep Learning with Co-Designed Sign-Bit Extraction and {GPU} Acceleration},
+      howpublished = {Cryptology {ePrint} Archive, Paper 2025/1063},
+      year = {2025},
+      url = {https://eprint.iacr.org/2025/1063}
+}
 ```

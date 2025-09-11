@@ -5,9 +5,9 @@
 
 Mizar is a secure computation protocol designed for three-party outsourced computing. By improving the sign-bit extraction protocol and introducing parallel computing acceleration, it delivers high-performance secure inference capabilities for neural networks. For detailed information on the relevant protocols and implementation specifics, please refer to the paper Mizar: Boosting Secure Three-Party Deep Learning with Co-Designed Sign-Bit Extraction and GPU Acceleration. 
 
-This repository built upon [Piranha](https://github.com/ucbrise/piranha) provides a prototype implementation of Mizar, intended solely for experimental testing purposes and SHOULD NOT be used in production environments.
+This repository is built upon [Piranha](https://github.com/ucbrise/piranha), which provides a prototype implementation of Mizar, intended solely for experimental testing purposes and SHOULD NOT be used in production environments.
 
-The paper is available on Eprint [Mizar](https://eprint.iacr.org/2025/1063)
+The paper is available on Eprint [Mizar](https://eprint.iacr.org/2025/1063).
 
 
 ## Build & Run

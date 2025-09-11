@@ -7,7 +7,7 @@ Mizar is a secure computation protocol designed for three-party outsourced compu
 
 This repository is built upon [Piranha](https://github.com/ucbrise/piranha), which provides a prototype implementation of Mizar, intended solely for experimental testing purposes and SHOULD NOT be used in production environments.
 
-The paper is available on Eprint [Mizar](https://eprint.iacr.org/2025/1063).
+The paper is available on [Eprint/2025/1063](https://eprint.iacr.org/2025/1063).
 
 
 ## Build & Run

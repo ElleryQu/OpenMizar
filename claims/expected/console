@@ -1,0 +1,205 @@
+Requirement already satisfied: torch in /usr/local/lib/python3.10/dist-packages (2.7.0)
+Requirement already satisfied: torchvision in /usr/local/lib/python3.10/dist-packages (0.22.0)
+Requirement already satisfied: nvidia-cudnn-cu12==9.5.1.17 in /usr/local/lib/python3.10/dist-packages (from torch) (9.5.1.17)
+Requirement already satisfied: typing-extensions>=4.10.0 in /usr/local/lib/python3.10/dist-packages (from torch) (4.13.2)
+Requirement already satisfied: nvidia-cublas-cu12==12.6.4.1 in /usr/local/lib/python3.10/dist-packages (from torch) (12.6.4.1)
+Requirement already satisfied: nvidia-cuda-cupti-cu12==12.6.80 in /usr/local/lib/python3.10/dist-packages (from torch) (12.6.80)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.6.77 in /usr/local/lib/python3.10/dist-packages (from torch) (12.6.77)
+Requirement already satisfied: nvidia-nvtx-cu12==12.6.77 in /usr/local/lib/python3.10/dist-packages (from torch) (12.6.77)
+Requirement already satisfied: sympy>=1.13.3 in /usr/local/lib/python3.10/dist-packages (from torch) (1.14.0)
+Requirement already satisfied: nvidia-cuda-runtime-cu12==12.6.77 in /usr/local/lib/python3.10/dist-packages (from torch) (12.6.77)
+Requirement already satisfied: networkx in /usr/local/lib/python3.10/dist-packages (from torch) (3.4.2)
+Requirement already satisfied: filelock in /usr/local/lib/python3.10/dist-packages (from torch) (3.18.0)
+Requirement already satisfied: nvidia-cusparse-cu12==12.5.4.2 in /usr/local/lib/python3.10/dist-packages (from torch) (12.5.4.2)
+Requirement already satisfied: nvidia-nccl-cu12==2.26.2 in /usr/local/lib/python3.10/dist-packages (from torch) (2.26.2)
+Requirement already satisfied: nvidia-cusparselt-cu12==0.6.3 in /usr/local/lib/python3.10/dist-packages (from torch) (0.6.3)
+Requirement already satisfied: nvidia-curand-cu12==10.3.7.77 in /usr/local/lib/python3.10/dist-packages (from torch) (10.3.7.77)
+Requirement already satisfied: fsspec in /usr/local/lib/python3.10/dist-packages (from torch) (2025.3.2)
+Requirement already satisfied: triton==3.3.0 in /usr/local/lib/python3.10/dist-packages (from torch) (3.3.0)
+Requirement already satisfied: nvidia-cusolver-cu12==11.7.1.2 in /usr/local/lib/python3.10/dist-packages (from torch) (11.7.1.2)
+Requirement already satisfied: nvidia-cufft-cu12==11.3.0.4 in /usr/local/lib/python3.10/dist-packages (from torch) (11.3.0.4)
+Requirement already satisfied: jinja2 in /usr/local/lib/python3.10/dist-packages (from torch) (3.1.6)
+Requirement already satisfied: nvidia-nvjitlink-cu12==12.6.85 in /usr/local/lib/python3.10/dist-packages (from torch) (12.6.85)
+Requirement already satisfied: nvidia-cufile-cu12==1.11.1.6 in /usr/local/lib/python3.10/dist-packages (from torch) (1.11.1.6)
+Requirement already satisfied: setuptools>=40.8.0 in /usr/lib/python3/dist-packages (from triton==3.3.0->torch) (59.6.0)
+Requirement already satisfied: pillow!=8.3.*,>=5.3.0 in /usr/local/lib/python3.10/dist-packages (from torchvision) (11.2.1)
+Requirement already satisfied: numpy in /usr/local/lib/python3.10/dist-packages (from torchvision) (2.2.5)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.10/dist-packages (from sympy>=1.13.3->torch) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.10/dist-packages (from jinja2->torch) (3.0.2)
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+(59904, 28, 28, 1)
+(59904, 10)
+(9984, 28, 28, 1)
+(9984, 10)
+(49920, 32, 32, 3)
+(49920, 10)
+(9984, 32, 32, 3)
+(9984, 10)
+-----------------------------------
+Protocol:           falcon
+Timestamp:          20250926-0913
+Enable offline:     False
+Debug mode:         None
+PID:                    4043386 4043387 4043388
+Time:               93.11s
+Done.
+-----------------------------------
+Protocol:           aegis
+Timestamp:          20250926-0914
+Enable offline:     False
+Debug mode:         None
+PID:                    4077924 4077925 4077926
+Time:               64.07s
+Done.
+-----------------------------------
+Protocol:           mizar
+Timestamp:          20250926-0915
+Enable offline:     False
+Debug mode:         None
+PID:                    4085622 4085623 4085624
+Time:               45.05s
+Done.
+-----------------------------------
+Protocol:               falcon
+Timestamp:              20250926-0916
+Model:                  lenet
+Num Epochs:             1
+Num Iterations:         10
+Batch Size:             1
+Enable offline:         False
+Debug mode:             None
+PID:                    4091610 4091611 4091612
+Time:               22.02s
+Done.
+-----------------------------------
+Protocol:               falcon
+Timestamp:              20250926-0916
+Model:                  vgg16
+Num Epochs:             1
+Num Iterations:         10
+Batch Size:             1
+Enable offline:         False
+Debug mode:             None
+PID:                    4099078 4099079 4099080
+Time:               24.03s
+Done.
+-----------------------------------
+Protocol:               aegis
+Timestamp:              20250926-0917
+Model:                  lenet
+Num Epochs:             1
+Num Iterations:         10
+Batch Size:             1
+Enable offline:         False
+Debug mode:             None
+PID:                    4115291 4115292 4115293
+Time:               20.02s
+Done.
+-----------------------------------
+Protocol:               aegis
+Timestamp:              20250926-0917
+Model:                  vgg16
+Num Epochs:             1
+Num Iterations:         10
+Batch Size:             1
+Enable offline:         False
+Debug mode:             None
+PID:                    4117145 4117146 4117147
+Time:               23.02s
+Done.
+-----------------------------------
+Protocol:               mizar
+Timestamp:              20250926-0918
+Model:                  lenet
+Num Epochs:             1
+Num Iterations:         10
+Batch Size:             1
+Enable offline:         False
+Debug mode:             None
+PID:                    4120659 4120660 4120661
+Time:               20.02s
+Done.
+-----------------------------------
+Protocol:               mizar
+Timestamp:              20250926-0918
+Model:                  vgg16
+Num Epochs:             1
+Num Iterations:         10
+Batch Size:             1
+Enable offline:         False
+Debug mode:             None
+PID:                    4122223 4122224 4122225
+Time:               22.02s
+Done.
+-----------------------------------
+Protocol:               falcon
+Timestamp:              20250926-0918
+Model:                  lenet
+Num Epochs:             1
+Num Iterations:         10
+Batch Size:             32
+Enable offline:         False
+Debug mode:             None
+PID:                    4125125 4125126 4125127
+Time:               25.03s
+Done.
+-----------------------------------
+Protocol:               falcon
+Timestamp:              20250926-0919
+Model:                  vgg16
+Num Epochs:             1
+Num Iterations:         10
+Batch Size:             32
+Enable offline:         False
+Debug mode:             None
+PID:                    4134566 4134567 4134568
+Time:               64.07s
+Done.
+-----------------------------------
+Protocol:               aegis
+Timestamp:              20250926-0920
+Model:                  lenet
+Num Epochs:             1
+Num Iterations:         10
+Batch Size:             32
+Enable offline:         False
+Debug mode:             None
+PID:                    4158385 4158386 4158387
+Time:               22.02s
+Done.
+-----------------------------------
+Protocol:               aegis
+Timestamp:              20250926-0920
+Model:                  vgg16
+Num Epochs:             1
+Num Iterations:         10
+Batch Size:             32
+Enable offline:         False
+Debug mode:             None
+PID:                    4160857 4160858 4160859
+Time:               47.05s
+Done.
+-----------------------------------
+Protocol:               mizar
+Timestamp:              20250926-0921
+Model:                  lenet
+Num Epochs:             1
+Num Iterations:         10
+Batch Size:             32
+Enable offline:         False
+Debug mode:             None
+PID:                    4166690 4166691 4166692
+Time:               24.03s
+Done.
+-----------------------------------
+Protocol:               mizar
+Timestamp:              20250926-0921
+Model:                  vgg16
+Num Epochs:             1
+Num Iterations:         10
+Batch Size:             32
+Enable offline:         False
+Debug mode:             None
+PID:                    4168929 4168930 4168931
+Time:               38.04s
+Done.

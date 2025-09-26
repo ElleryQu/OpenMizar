@@ -46,8 +46,8 @@ TARGET_DATASET = datasets.CIFAR10
 BATCH_SIZE = 128
 path = "files/CIFAR10/"
 
-train_loader = DataLoader(TARGET_DATASET("files", train=True, transform=transforms.ToTensor(), download=False), batch_size=BATCH_SIZE, shuffle=False, drop_last=True)
-test_loader = DataLoader(TARGET_DATASET("files", train=False, transform=transforms.ToTensor(), download=False), batch_size=BATCH_SIZE, shuffle=False, drop_last=True)
+train_loader = DataLoader(TARGET_DATASET("files", train=True, transform=transforms.ToTensor(), download=True), batch_size=BATCH_SIZE, shuffle=False, drop_last=True)
+test_loader = DataLoader(TARGET_DATASET("files", train=False, transform=transforms.ToTensor(), download=True), batch_size=BATCH_SIZE, shuffle=False, drop_last=True)
 
 train_images, train_labels = get_dataset(train_loader)
 test_images, test_labels = get_dataset(test_loader)

@@ -10,7 +10,7 @@ This repository is built upon [Piranha](https://github.com/ucbrise/piranha), whi
 The paper is available on [Eprint/2025/1063](https://eprint.iacr.org/2025/1063).
 
 
-## Build & Run
+## Build
 
 ```shell
 # prepare deps.
@@ -26,12 +26,18 @@ sed -i "s/^CUDA_VERSION=.*/CUDA_VERSION=$NEW_CUDA_VERSION/" files/make/Makefile-
 
 # build pfalcon, aegis and mizar.
 ./scripts/quick_make.sh
+```
 
+## Download Datasets
+```shell
 # download necessary datasets.
 mkdir -p files/MNIST; mkdir -p files/CIFAR10
 pip install torch torchvision
 python download_{mnist, cifar}.py
+```
 
+## Run
+```shell
 # run the experiments.
 # by default, only the online phase of the protocol is executed. 
 # if you wish to run an end-to-end experiment, please add the "-s" parameter.
@@ -39,6 +45,7 @@ python3 ./scripts/quick_exp.py -m func  -p falcon aegis mizar -c 0 1 2          
 python3 ./scripts/quick_exp.py -m snni  -p falcon aegis mizar -c 0 1 2 --models lenet vgg16 --num_iterations 10                 # snni test
 python3 ./scripts/quick_exp.py -m train -p falcon aegis mizar -c 0 1 2 --models lenet vgg16 --num_iterations 10 --batch_size 32 # snnt test
 ```
+For more details about artifacts, please move to the directory /claims.
 
 ## Citing Mizar
 

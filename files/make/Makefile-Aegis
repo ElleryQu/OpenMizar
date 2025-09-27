@@ -6,7 +6,7 @@ DEBUG_DIR=debug
 CUDA_VERSION=11.8
 CUTLASS_PATH=ext/cutlass
 
-CXX=/usr/local/cuda-$(CUDA_VERSION)/bin/nvcc
+CXX=/usr/local/cuda/bin/nvcc
 FLAGS := -extended-lambda --std c++14 -DAEGIS -Xcompiler="-O3,-w,-std=c++14,-pthread,-msse4.1,-maes,-msse2,-mpclmul,-fpermissive,-fpic,-pthread -DAEGIS" -Xcudafe "--diag_suppress=declared_but_not_referenced"
 DEBUG_FLAGS := -extended-lambda --std c++14 -Xcompiler="-O0,-g,-w,-std=c++14,-pthread,-msse4.1,-maes,-msse2,-mpclmul,-fpermissive,-fpic,-pthread" -Xcudafe "--diag_suppress=declared_but_not_referenced"
 

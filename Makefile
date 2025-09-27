@@ -1,4 +1,4 @@
-BINARY=piranha-mizar
+BINARY=piranha-rss
 DEBUG_BINARY=piranha-debug
 BUILD_DIR=build
 DEBUG_DIR=debug
@@ -6,8 +6,8 @@ DEBUG_DIR=debug
 CUDA_VERSION=11.8
 CUTLASS_PATH=ext/cutlass
 
-CXX=/usr/local/cuda-$(CUDA_VERSION)/bin/nvcc
-FLAGS := -extended-lambda --std c++14 -DMIZAR -Xcompiler="-O3,-w,-std=c++14,-pthread,-msse4.1,-maes,-msse2,-mpclmul,-fpermissive,-fpic,-pthread -DMIZAR" -Xcudafe "--diag_suppress=declared_but_not_referenced"
+CXX=/usr/local/cuda/bin/nvcc
+FLAGS := -extended-lambda --std c++14 -DPFALCON -Xcompiler="-O3,-w,-std=c++14,-pthread,-msse4.1,-maes,-msse2,-mpclmul,-fpermissive,-fpic,-pthread -DPFALCON" -Xcudafe "--diag_suppress=declared_but_not_referenced"
 DEBUG_FLAGS := -extended-lambda --std c++14 -Xcompiler="-O0,-g,-w,-std=c++14,-pthread,-msse4.1,-maes,-msse2,-mpclmul,-fpermissive,-fpic,-pthread" -Xcudafe "--diag_suppress=declared_but_not_referenced"
 
 PIRANHA_FLAGS :=

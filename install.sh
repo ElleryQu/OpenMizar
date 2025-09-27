@@ -5,7 +5,7 @@ git submodule update --init --recursive
 # specifically, modify the `CUDA_VERSION` variables under `files/make/Makefile-*`.
 NEW_CUDA_VERSION=$(nvcc --version | grep -oP '(?<=release )\d+\.\d+')
 sed -i "s/^CUDA_VERSION=.*/CUDA_VERSION=$NEW_CUDA_VERSION/" files/make/Makefile-PFalcon
-sed -i "s/^CUDA_VERSION=.*/CUDA_VERSION=$NEW_CUDA_VERSION/" files/make/Makefile-Mizar
+sed -i "s/^CUDA_VERSION=.*/CUDA_VERSION=$NEW_CUDA_VERSION/" files/make/Makefile-Aegis
 sed -i "s/^CUDA_VERSION=.*/CUDA_VERSION=$NEW_CUDA_VERSION/" files/make/Makefile-Mizar
 
 # build pfalcon, aegis and mizar.
